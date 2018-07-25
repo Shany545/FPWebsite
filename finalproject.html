@@ -7,6 +7,17 @@
   text-align: center;
 
 }
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #f55e61;
+    color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 40px;
+}
 header {
   background-color: #f55e61;
   height: 200px;
@@ -190,19 +201,41 @@ body {
 .space2 {
   height:50px;
 }
-</style>
-<script type = "text/javascript"src = "finalproject.js"></script>
-<head>
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
 
+}
+
+#hi {
+  display:none;
+}
+#animate{
+  display: none;
+}
+#buttonAU{
+  align-content: center;
+}
+
+</style>
+
+<head>
+<div class = "header">
   <title>FAM-bot</title>
+  <script src = "jquery-3.3.1.js"></script>
+  <script src ="finalproject.js"></script>
 </head>
 <header>
   <button
    id = "buttonwan" class = "tab_button2" onclick="window.open('singup.html', '_self')"> Sign In</button>
   <button id = "button2" class = "tab_button2" onclick = window.location("finalproject2.html");>Register</button>
 <div class = "space2"></div>
+<div id = "animate">
   <h1 class = "lol">FAM Bot</h1>
   <p class = "lol">A website created by Team Seguridad.</p>
+</div>
+</div>
 </header>
 
 <div class="navbar">
@@ -213,6 +246,11 @@ body {
   <a href="code.html" class="right">About the Code</a>
 </div>
 
+<center>
+<button id = "buttonAU" class = "tab_button">About Us</button>
+</center>
+<div class = "space2"></div>
+<div id = "hi">
 <div class="row">
   <div class="side">
     <center>
@@ -228,6 +266,8 @@ body {
     <img src="https://lh5.googleusercontent.com/L6yTJNPZFtx8T7iCZ_xhJlplQEuVG8wBpFDr1NwJI6efFQn087P_fp1yhr2SeiKwTtrt3HR9rGh5MMaX3-iYL4Y_xI9Knzp4EaFwGnXwixA7VTC56LOBkSc-N4Is116K-NwIvhpt59A"; width=290px; height=180px;></img>
     </center>
   </div>
+</div>
+</div>
   <main>
     <center>
       <h2>Behind the Scenes</h2>
@@ -251,12 +291,13 @@ body {
       <div>
       <p>Alarm - when whiskers are touched sound alarm between intervals of help.</p>
       <div>
-      <p>Sound -</p>
+      <p>Sound - (crikets)</p>
     </div>
   </main>
 
 
-<footer>
-  <p class = "tinytext"> This website was created by the Seguridad team. This website is © Copyright 2018 FamBot - a bot to find you in any situation. All Rights Reserved.</p>
-</footer>
+  <div class="footer">
+    <h2>Copyright @Seguridad</h2>
+  </div>
+</body>
 </html>
