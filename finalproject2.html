@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<script src = "finalproject.js"></script>
+<script type = "finalproject.js"></script>
 <style>
 .vid_box{
   height:400px;
@@ -12,7 +12,7 @@
 }
 main {
   background-image: image("robotbackground.png");
-  height:500px
+  height:500px;
 }
 header,footer {
   background-color:#d64059;
@@ -25,7 +25,7 @@ header,footer {
 }
 
 /* Style the buttons inside the tab */
-.tab button {
+.tab_button {
     background-color: inherit;
     float: left;
     border: none;
@@ -34,15 +34,16 @@ header,footer {
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;
+    height:50px;
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.tab_button:hover {
     background-color: #ddd;
 }
 
 /* Create an active/current tablink class */
-.tab button.active {
+.tab_button.active {
     background-color: #ccc;
 }
 
@@ -53,16 +54,47 @@ header,footer {
     border: 1px solid #ccc;
     border-top: none;
 }
+
+textarea {
+  background-color:white;
+
+}
+body {
+  background-color: #d64059;
+}
+.space1{
+  background-color: #d64059;
+  height:100px;
+}
+.psswd {
+
+}
+.register {
+  align-items: center;
+
+}
+
+
 </style>
 <head>
   <title> Mom-bot</title>
 </head>
+<script src = "finalproject.js"></script>
 <header>
 </header>
-<body>
-  <div class = "vid_box">
-  </div>
-</body>
+<main>
+  <form id = "ebox" onsubmit="save_stuff()" method="post">
+Email Address <input type="text" name="fname">
+<div class = "space1"></div>
+
+
+Password <input type="text" name="fname">
+<div class = "space1"></div>
+<input class = "tab_button" type="submit" value="Submit">
+</form>
+<button class = "tab_button" onclick = window.location("finalproject.html");> Go Back to Home</button>
+
+</main>
 <footer>
 </footer>
 </html>
